@@ -22,10 +22,10 @@
       <div class="logo">ThinkfulCupid</div>
       <nav>
         <ul id="menu">
-          <li><a>Join</a></li>
-          <li><a>About</a></li>
-          <li><a>Download</a></li>
-          <li><a>Blog</a></li>
+          <li><a href="#join">Join</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#download">Download</a></li>
+          <li><a href="#blog">Blog</a></li>
         </ul>
       </nav>
     </header>
@@ -35,11 +35,57 @@
       <section id="join">
         <img src="images/love.png" alt="ThinkfulCupid - love" />
         <!-- Add join form here -->
-      </section>
+
+      <!-- Form -->
+        <form>
+          <h1>Find Your Perfect Match</h1>
+          <fieldset>
+            <div class="form-box">
+              <label for="email">Email Address</label>
+              <input  
+                id="email"
+                type="text"
+                name="email"
+                required
+                placeholder="email@example.com"
+                />
+            </div>
+            <div class="form-box">
+              <label for="password">Password:</label>
+              <input  
+                id="password"
+                type="password"
+                name="password"
+                minlength="8"
+                required
+                />
+            </div>
+            <div class="form-box">
+              <label for="username">Username:</label>
+              <input
+                id="username"
+                type="text"
+                name="username"
+                required
+                />
+            </div>
+            <div class="form-box">
+              <label for="gender">I am a...</label>
+              <select name="gender" id="gender" size="1">
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+              </select>
+            </div>
+            <button type="submit">Join</button>
+          </fieldset>
+        </form>
+    </section>
 
       <!-- About -->
       <section id="about" class="alternate-background">
         <h2>About</h2>
+        <div class="group">
         <img
           src="images/sunset-with-heart.png"
           alt="ThinkfulCupid - Sunset with heart"
@@ -58,6 +104,7 @@
           tristique vestibulum. In hac habitasse platea dictumst. Vestibulum sit
           amet pretium quam.
         </p>
+        </div>
       </section>
 
       <!-- Download -->
@@ -85,7 +132,7 @@
       </section>
 
       <!-- Blog -->
-      <section id="blog" class="alternate-background">
+      <section id="blog" class="alternate-background group">
         <h2>Blog</h2>
 
         <img src="images/blog-post-1.png" alt="Thinkfulbnb - blog post 1" />
